@@ -1,6 +1,10 @@
 {pkgs, ...}: 
 
 {
+  import = [ 
+    ./cava
+  ];
+  
   gtk = {
     enable = true;
     iconTheme = {

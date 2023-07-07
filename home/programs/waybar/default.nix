@@ -12,7 +12,7 @@
                  font-family: "JetBrainsMono Nerd Font";
                  font-size: 12pt;
                  font-weight: bold;
-                 border-radius: 0px;
+                 border-radius: 8px;
                  transition-property: background-color;
                  transition-duration: 0.5s;
                }
@@ -36,7 +36,9 @@
                  margin-left: 5px;
                  margin-right: 5px;
                  margin-top: 5px;
-                 background-color: rgb(30, 30, 46);
+                 background-color: #1e1e2a;
+                 padding: 3px;
+                 padding-left:8px;
                }
          #workspaces {
                  padding-left: 0px;
@@ -113,6 +115,7 @@
                }
          #custom-powermenu {
                  color: rgb(242, 143, 173);
+                 padding-right: 8px;
                }
          #tray {
                  padding-right: 8px;
@@ -158,7 +161,7 @@
         ];
         "custom/launcher" = {
           "format" = " ";
-          "on-click" = "pkill rofi || ~/.config/rofi/launcher.sh";
+          "on-click" = "pkill rofi || ~/.config/rofi/launchers/type-2/launcher.sh";
           "tooltip" = false;
         };
         "custom/wall" = {
@@ -237,7 +240,7 @@
         };
         "network" = {
           "format-disconnected" = "󰯡 Disconnected";
-          "format-ethernet" = "󰀂 {ifname} ({ipaddr})";
+          "format-ethernet" = "󰀂 Connected!";
           "format-linked" = "󰖪 {essid} (No IP)";
           "format-wifi" = "󰖩 {essid}";
           "interval" = 1;
@@ -251,7 +254,7 @@
         };
         "custom/powermenu" = {
           "format" = "";
-          "on-click" = "pkill rofi || ~/.config/rofi/powermenu.sh";
+          "on-click" = "pkill rofi || ~/.config/rofi/powermenu/type-2/powermenu.sh";
           "tooltip" = false;
         };
         "tray" = {
@@ -526,6 +529,7 @@
               }
         #custom-powermenu {
                 color: #BD6069;
+                padding-right: 8px/
               }
         #tray {
                 padding-right: 8px;

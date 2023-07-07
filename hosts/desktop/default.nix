@@ -3,6 +3,7 @@
   imports = [
     ./fonts
     ./virtualisation
+    ./scripts
   ]
 
   programs = {

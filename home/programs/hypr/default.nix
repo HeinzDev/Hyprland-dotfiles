@@ -30,13 +30,13 @@
     #SWAYSOCK
 
     # Autostart
-    exec-once = $HOME/.config/hypr/scripts/autostart
-    exec-once = waybar & cool-retro-term -e nitch
 
     # Screensharing
-    #exec-once = $HOME/.config/hypr/scripts/screensharing
+    #exec-once = hyprctl setcursor Bibata-Modern-Classic 24
 
     source = /home/enzo/.config/hypr/colors
+    exec = pkill waybar & sleep 0.5 && waybar
+    exec-once = swww init && swww img /home/enzo/Imagens/wallpapers/kaworu.png
 
     # Set en layout at startup
 
@@ -199,7 +199,7 @@
         '';
   };
 
-  home.file.".config/hypr/autostart.sh".text = ''
+  home.file.".config/hypr/scripts/autostart.sh".text = ''
     #!/usr/bin/env bash
 
     pkill waybar

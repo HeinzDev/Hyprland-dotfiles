@@ -31,7 +31,6 @@
       lutris
       nitch
       openrgb
-      sublime4
       tty-clock
       xflux
       betterdiscord-installer

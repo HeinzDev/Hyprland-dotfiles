@@ -6,13 +6,13 @@
     ./scripts
   ]
   
-  programs.regreeter.enable = true;
+programs.regreet.enable = true;
   services.greetd.enable = true;
-  environment.variables.SESSION_DIRS = "${pkgs.hyprland}/share/wayland-sessions";
-
-  programs = {
-    dconf.enable = true;
-  };
+  services.xserver.displayManager.session = [{
+    manage = "desktop";
+    name = "shell";
+    start = "$SHELL -l";
+  }];
 
   xdg.portal = {
     enable = true;

@@ -1,7 +1,6 @@
-{ config, lib, pkgs, user, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home-manager.users.enzo = {
     programs.waybar = {
       enable = true;
       systemd = {
@@ -553,5 +552,4 @@
               }
       '';
     };
-  };
 }

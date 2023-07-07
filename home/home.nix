@@ -4,8 +4,6 @@
     hyprland.homeManagerModules.default
     ./programs
     ./themes
-    ./fonts
-    ./virtualisation
   ];
 
   home = {
@@ -42,10 +40,10 @@
       zenity
       gpaste
       gnome-tweaks
-      gnome-screenshots
+      gnome-screenshot
       eog
       gedit
-  ])
+  ]);
 
   programs.home-manager.enable = true;
 

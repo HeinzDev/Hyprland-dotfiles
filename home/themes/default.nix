@@ -1,7 +1,7 @@
-{pkgs, ...}: 
+{ config, lib, pkgs, ... }:
 
 {
-  import = [ 
+  imports = [ 
     ./cava
   ];
   

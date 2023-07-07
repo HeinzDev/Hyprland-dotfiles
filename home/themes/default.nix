@@ -8,10 +8,10 @@
       package = pkgs.yaru-theme;
     };
 
-    theme = {
-      name = "Catppuccin";
-      package = pkgs.catppuccin-gtk;
-    };
+    #theme = {
+    #  name = "Catppuccin";
+    #  package = pkgs.catppuccin-gtk;
+    #};
 
     cursorTheme = {
       name = "Bibata-Modern-Classic";

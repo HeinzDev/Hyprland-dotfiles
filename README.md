@@ -9,9 +9,9 @@
 
 |                          |             NixOS 23.05               |
 |--------------------------|:-------------------------------------:|
-| **Desktop Environment**  |   [Gnome](https://www.gnome.org)      |
+| **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
 | **Terminal Emulator**    |   [Cool-Retro-Term](https://github.com/Swordfish90/cool-retro-term) |
-| **Display Server**       |   [Xorg](https://www.x.org/wiki/)     |
+| **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
 | **Application Launcher** |   [Rofi](https://github.com/davatorium/rofi)  |
 | **Shell**                |   [Zsh](https://zsh.sourceforge.io)   |
 | **Text Editor**          |   [Neovim](https://neovim.io)         |
@@ -20,8 +20,8 @@
 
 Ambiente Desktop:
 
-<p align="center"><img src="https://i.imgur.com/6YcyoCA.png"></p>
-<p align="center"><img src="https://i.imgur.com/zJYPPIT.png"></p>
+<p align="center"><img src="></p>
+<p align="center"><img src="></p>
 
 ## Estrutura
 
@@ -48,7 +48,7 @@ Ambiente Desktop:
 
 0. Baixe o projeto:
 ```bash
- $ git clone https://github.com/HeinzDev/Nix-dotfiles.git || cd Nix
+ $ git clone https://github.com/HeinzDev/Hyprland-dotfiles.git || cd Nix
 ```
 
 1. Instale o projeto:
@@ -60,6 +60,6 @@ $ ./install.sh
 ou
 
 ```bash
-$ cd Nix-dotfiles
+$ cd Hyprland-dotfiles
 $ sudo nixos-rebuild switch --flake .#enzo
 ```

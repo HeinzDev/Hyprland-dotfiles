@@ -47,12 +47,9 @@
 
    services.xserver = {
    enable = true;
-   videoDrivers = ["nvidia"];
-    desktopManager.gnome.enable = true;
+   #videoDrivers = ["nvidia"];
     displayManager = {
         gdm.enable = true;
-        #wayland = true;
-        defaultSession = "gnome";
     };
     # X11 keymap
     layout = "br";
@@ -60,24 +57,24 @@
   };
 
   #NvidiaConfig
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
+  #hardware.opengl = {
+  #  enable = true;
+  #  driSupport = true;
+  #  driSupport32Bit = true;
+  #};
 
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [
-      "#nvidia-x11"
-    ];
+  #nixpkgs.config.allowUnfreePredicate = pkg:
+  #  builtins.elem (lib.getName pkg) [
+  #    "#nvidia-x11"
+  #  ];
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    open = false;
+  #hardware.nvidia = {
+  #  modesetting.enable = true;
+  #  open = false;
 
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
+  #  nvidiaSettings = true;
+  #  package = config.boot.kernelPackages.nvidiaPackages.stable;
+  #};
 
   programs.steam = {
    enable = true;
@@ -86,8 +83,6 @@
   };
   # Configure console keymap
   console.keyMap = "br-abnt2";
-
-  services.printing.enable = true;
 
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -108,10 +103,6 @@
    NIXPKGS_ALLOW_UNFREE = "1";
   };
 
-  #Docker
-  #virtualisation.docker.enable = true;
-
-  programs.dconf.enable = true;
   users.users.enzo = {
     isNormalUser = true;
     description = "Enzo";
@@ -124,9 +115,6 @@
    ];
   };
 
-  #flatpak
-  #services.flatpak.enable = true;
-
   # Enable automatic login for the user.
   #services.xserver.displayManager.autoLogin.enable = true;
   #services.xserver.displayManager.autoLogin.user = "enzo";
@@ -137,9 +125,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  #Moved to home-manager
-  environment.systemPackages = with pkgs; [];
 
   #Garbage colector
   nix.gc = {

@@ -48,9 +48,9 @@
    services.xserver = {
    enable = true;
    #videoDrivers = ["nvidia"];
-    displayManager = {
-        gdm.enable = true;
-    };
+    #displayManager = {
+    #    gdm.enable = true;
+    #};
     # X11 keymap
     layout = "br";
     xkbVariant = "";

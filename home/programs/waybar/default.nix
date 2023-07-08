@@ -134,6 +134,7 @@
                }
          #custom-cava-internal{
                  font-family: "Hack Nerd Font" ;
+                 color: #33ccff;
                }
       '';
       settings = [{

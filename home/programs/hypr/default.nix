@@ -126,7 +126,7 @@
     bind = $mainMod, G, fullscreen,
 
 
-    bind = $mainMod, RETURN, exec, ./.config/hypr/scripts/cool-retro-term.sh
+    bind = $mainMod, RETURN, exec, ./scripts/cool-retro-term.sh
     bind = $mainMod, Q, killactive,
     bind = $mainMod, M, exit,
     bind = $mainMod, F, exec, nautilus
@@ -140,7 +140,7 @@
 
     # Binds in cyrillic layout
 
-    bind = , Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool
+    bind = , Print, exec, grim -g "$(slurp)"
     bind = SHIFT, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -S
     bind = $mainMod, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -W
 
@@ -198,13 +198,4 @@
     bindm = ALT, mouse:272, resizewindow
         '';
   };
-
-  home.file.".config/hypr/scripts/autostart.sh".text = ''
-    #!/usr/bin/env bash
-
-    pkill waybar
-    swww init
-    swww img /home/enzo/Imagens/wallpapers/kaworu.png
-    waybar &
-      '';
 }

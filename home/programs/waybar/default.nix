@@ -39,6 +39,7 @@
                  background-color: #1e1e2a;
                  padding: 3px;
                  padding-left:8px;
+                 border: 2px none #33ccff;
                }
          #workspaces {
                  padding-left: 0px;
@@ -143,7 +144,7 @@
           "wlr/workspaces"
           "temperature"
           #"idle_inhibitor"
-          "custom/wall"
+          #"custom/wall"
           "mpd"
           "custom/cava-internal"
         ];
@@ -172,7 +173,7 @@
           "tooltip" = false;
         };
         "custom/cava-internal" = {
-          "exec" = "sleep 1s && cava-internal";
+          "exec" = "sleep 1s && ~/scripts/cava-internal.sh";
           "tooltip" = false;
         };
         "wlr/workspaces" = {
@@ -215,14 +216,14 @@
         };
         "memory" = {
           "interval" = 1;
-          "format" = "󰍛 {percentage}%";
+          "format" = "󰍛󰻠 {percentage}%";
           "states" = {
             "warning" = 85;
           };
         };
         "cpu" = {
           "interval" = 1;
-          "format" = "󰻠 {usage}%";
+          "format" = "󰍛 {usage}%";
         };
         "mpd" = {
           "max-length" = 25;
@@ -302,7 +303,7 @@
               "interval": 1
             },
             "custom/cava-internal": {
-              "exec": "sleep 1s && cava-internal",
+              "exec": "sleep 1s && ~/scripts/cava-internal.sh",
               "tooltip": false
             },
             "custom/launcher": {

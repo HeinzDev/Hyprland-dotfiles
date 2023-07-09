@@ -3,6 +3,7 @@
   imports = [
     hyprland.homeManagerModules.default
     ./programs
+    ./scripts
     ./themes
   ];
 
@@ -12,36 +13,39 @@
   };
 
   home.packages = (with pkgs; [ 
-      cool-retro-term
-      neovim
-      wget
-      discord
-      exa
-      btop
-      ranger
-      git
-      gnumake
-      curl
-      nano
-      appimage-run
-      bibata-cursors
-      catimg
-      vscode
-      lollypop
-      lutris
-      nitch
-      openrgb
-      tty-clock
-      xflux
-      betterdiscord-installer
+    cool-retro-term
+    neovim
+    nano
+    wget
+    grim
+    slurp
+    wl-clipboard
+    pamixer
+    mpc-cli
+    discord
+    exa
+    btop
+    ranger
+    git
+    gnumake
+    curl
+    appimage-run
+    bibata-cursors
+    catimg
+    vscode
+    lollypop
+    lutris
+    nitch
+    openrgb
+    tty-clock
+    xflux
+    betterdiscord-installer
   ]) ++ (with pkgs.gnome; [ 
-      nautilus
-      zenity
-      gpaste
-      gnome-tweaks
-      gnome-screenshot
-      eog
-      gedit
+    nautilus
+    zenity
+    gnome-tweaks
+    eog
+    gedit
   ]);
 
   programs.home-manager.enable = true;

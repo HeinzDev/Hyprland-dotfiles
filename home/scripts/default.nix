@@ -102,8 +102,7 @@ let
            --grace 2 \
            --fade-in 0.3
   '';
-  # myi3lock = pkgs.writeShellScriptBin "myi3lock" ''
-  # '';
+
   dynamic_wallpaper = pkgs.writeShellScriptBin "dynamic_wallpaper" ''
     if command -v swww >/dev/null 2>&1; then 
         swww img $(find ~/Pictures/wallpaper/. -name "*.png" | shuf -n1) --transition-type random

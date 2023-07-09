@@ -10,12 +10,15 @@
   #users.users.greeter.packages = [ pkgs.hyprland ];
 
   programs.regreet.enable = true;
-  services.greetd.enable = true;
-  services.xserver.displayManager.session = [{
-    manage = "desktop";
-    name = "shell";
-    start = "$SHELL -l";
-  }];
+  services.greetd = {
+    enable = true;
+    settings = {
+      initial_session = {
+        user = "enzo";
+        command = "$SHELL -l";
+      };
+    };
+  };
 
   programs = {
     bash = {
@@ -24,7 +27,7 @@
            exec  Hyprland
         fi
       '';
-  };
+    };
   };
 
   programs.dconf.enable = true;

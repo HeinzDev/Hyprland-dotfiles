@@ -12,10 +12,10 @@
       package = pkgs.yaru-theme;
     };
 
-    #theme = {
-    #  name = "Catppuccin";
+    theme = {
+      name = "Nightfox-Dusk-B";
     #  package = pkgs.catppuccin-gtk;
-    #};
+    };
 
     cursorTheme = {
       name = "Bibata-Modern-Classic";

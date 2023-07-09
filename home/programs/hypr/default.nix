@@ -19,7 +19,6 @@
     systemdIntegration = true;
     nvidiaPatches = true;
     extraConfig = ''
-    exec-once = /home/enzo/.config/hypr/startup.sh
 
     # Monitor
     monitor=eDP-1, highrr, auto, 1
@@ -31,12 +30,11 @@
 
     # Autostart
 
-    # Screensharing
     #exec-once = hyprctl setcursor Bibata-Modern-Classic 24
 
     source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
-    exec-once = swww init && swww img /home/enzo/Imagens/wallpapers/kaworu.png
+    exec-once = swww init && swww img /home/enzo/Imagens/wallpapers/menhera.jpg
 
     # Set en layout at startup
 
@@ -140,7 +138,7 @@
 
     # Binds in cyrillic layout
 
-    bind = , Print, exec, grim -g "$(slurp)"
+    bind = , Print, exec, grim -g "$(slurp)" - | wl-copy
     bind = SHIFT, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -S
     bind = $mainMod, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -W
 
@@ -155,8 +153,8 @@
     bind =,XF86AudioPause,exec,playerctl play-pause
 
     # to switch between windows in a floating workspace
-    bind = SUPER,Tab,cyclenext,          # change focus to another window
-    bind = SUPER,Tab,bringactivetotop,   # bring it to the top
+    bind = SUPER,Tab,cyclenext,
+    bind = SUPER,Tab,bringactivetotop,
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, left, movefocus, l

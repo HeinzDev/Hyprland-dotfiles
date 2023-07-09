@@ -1,13 +1,24 @@
 **Português (Brasil)** | [English](README_en.md)
 
 <p align="center"><img src="https://i.imgur.com/X5zKxvp.png" width=300px></p>
+
+<p align="center">
+<a href="https://hyprland.org/"><img src="https://img.shields.io/static/v1?label=Hyprland&message=master&style=flat&logo=hyprland&colorA=24273A&colorB=8AADF4&logoColor=CAD3F5"/></a>
+ <a href="https://github.com/"><img src="https://img.shields.io/static/v1?label=Nix Flake&message=check&style=flat&logo=nixos&colorA=24273A&colorB=9173ff&logoColor=CAD3F5"></a>
+</p>
+
+<p align="center">
+<a href="https://nixos.org/"><img src="https://img.shields.io/badge/NixOS-unstable-informational.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8AADF4"></a> 
+
+
+<p align="center"><img src="https://i.imgur.com/NbxQ8MY.png" width=600px></p>
+
 <h2 align="center">HeinzDev NixOS Dotfiles</h2>
 
-<p align="center"><img src="https://i.imgur.com/rqskqPg.png" width=500px></p>
 
 ### Aplicações:
 
-|                          |             NixOS 23.05               |
+|                          |             NixOS 23.11               |
 |--------------------------|:-------------------------------------:|
 | **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
 | **Terminal Emulator**    |   [Cool-Retro-Term](https://github.com/Swordfish90/cool-retro-term) |
@@ -20,8 +31,8 @@
 
 Ambiente Desktop:
 
-<p align="center"><img src="></p>
-<p align="center"><img src="></p>
+<p align="center"><img src="https://i.imgur.com/S4XT0ZF.png"></p>
+<p align="center"><img src="https://i.imgur.com/0Lq4rOe.png"></p>
 
 ## Estrutura
 

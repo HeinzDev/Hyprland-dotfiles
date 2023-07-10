@@ -1,9 +1,20 @@
 **English** | [Portuguese (PT-BR)](README.md)
 
-<p align="center"><img src="" width=300px></p>
+<p align="center"><img src="https://i.imgur.com/X5zKxvp.png" width=300px></p>
+
+<p align="center">
+<a href="https://hyprland.org/"><img src="https://img.shields.io/static/v1?label=Hyprland&message=master&style=flat&logo=hyprland&colorA=24273A&colorB=8AADF4&logoColor=CAD3F5"/></a>
+ <a href="https://github.com/"><img src="https://img.shields.io/static/v1?label=Nix Flake&message=check&style=flat&logo=nixos&colorA=24273A&colorB=9173ff&logoColor=CAD3F5"></a>
+</p>
+
+<p align="center">
+<a href="https://nixos.org/"><img src="https://img.shields.io/badge/NixOS-unstable-informational.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8AADF4"></a> 
+
+
+<p align="center"><img src="https://i.imgur.com/NbxQ8MY.png" width=600px></p>
+
 <h2 align="center">HeinzDev NixOS Dotfiles</h2>
 
-<p align="center"><img src="" width=500px></p>
 
 ### Apps:
 
@@ -19,24 +30,32 @@
 
 ### DE/WM
 
-**Gnome**
+**Hyprland**
 
 Desktop Environment:
 
-<p align="center"><img src="https://i.imgur.com/6YcyoCA.png"></p>
-<p align="center"><img src="https://i.imgur.com/zJYPPIT.png"></p>
+<p align="center"><img src="https://i.imgur.com/S4XT0ZF.png"></p>
+<p align="center"><img src="https://i.imgur.com/0Lq4rOe.png"></p>
 
 ## Nix Dotfiles Directory Structure
 ```
 ├── home
 │  ├── programs
 │  │   ├── alacritty
-│  │   ├── dconf
+│  │   ├── hypr
+│  │   ├── kitty
 │  │   ├── rofi
+│  │   ├── waybar
 │  │   └── zsh
+│  ├── scripts
 │  ├── themes
+│  │   └── cava
 │  ├── wallpapers
 │  └── home.nix
+├── host
+│  └── desktop
+│      └── fonts
+│      └── virtualisation
 ├── nixos
 │  ├── configuration.nix
 │  └── hardware-configuration.nix

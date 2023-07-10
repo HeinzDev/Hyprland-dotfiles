@@ -27,7 +27,7 @@
 | **Shell**                |   [Zsh](https://zsh.sourceforge.io)   |
 | **Text Editor**          |   [Neovim](https://neovim.io)         |
 
-## **Gnome**
+## **Hyprland**
 
 Ambiente Desktop:
 
@@ -42,12 +42,20 @@ Ambiente Desktop:
 ├── home
 │  ├── programs
 │  │   ├── alacritty
-│  │   ├── dconf
+│  │   ├── hypr
+│  │   ├── kitty
 │  │   ├── rofi
+│  │   ├── waybar
 │  │   └── zsh
+│  ├── scripts
 │  ├── themes
+│  │   └── cava
 │  ├── wallpapers
 │  └── home.nix
+├── host
+│  └── desktop
+│      └── fonts
+│      └── virtualisation
 ├── nixos
 │  ├── configuration.nix
 │  └── hardware-configuration.nix

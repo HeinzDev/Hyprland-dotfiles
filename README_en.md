@@ -67,7 +67,7 @@ Desktop Environment:
 
 0. Download the project:
 ```bash
- $ git clone https://github.com/HeinzDev/Nix-Dotfiles.git|| cd Hyprland-dotfiles.git
+ $ git clone https://github.com/HeinzDev/Nix-Dotfiles.git | cd Hyprland-dotfiles.git
 ```
 
 1. Install the project:

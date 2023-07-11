@@ -67,7 +67,7 @@ Ambiente Desktop:
 
 0. Baixe o projeto:
 ```bash
- $ git clone https://github.com/HeinzDev/Hyprland-dotfiles.git || cd Nix
+ $ git clone https://github.com/HeinzDev/Hyprland-dotfiles.git | cd Nix
 ```
 
 1. Instale o projeto:

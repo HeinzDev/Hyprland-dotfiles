@@ -2,6 +2,7 @@
 
   imports = [
     hyprland.homeManagerModules.default
+    #./environment
     ./programs
     ./scripts
     ./themes
@@ -26,6 +27,7 @@
     exa
     btop
     ranger
+    wlr-randr
     git
     gnumake
     curl

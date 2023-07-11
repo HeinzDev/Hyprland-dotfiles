@@ -1,12 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
-  #imports = [
-  #  (import ../../environment/hypr-variables.nix)
+  #imports = [ 
+  #  ./hyprland-environment.nix
   #];
-  imports = [ 
-    ../waybar
-  ];
 
   home.packages = with pkgs; [ 
     waybar
@@ -21,12 +18,11 @@
     extraConfig = ''
 
     # Monitor
-    monitor=eDP-1, highrr, auto, 1
+    monitor=DP-1,1920x1080@165,auto,1
 
     # Fix slow startup
     exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
     exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP 
-    #SWAYSOCK
 
     # Autostart
 

@@ -9,6 +9,27 @@
     waybar
     swww
   ];
+
+    home = {
+    sessionVariables = {
+      EDITOR = "gedit";
+      BROWSER = "opera";
+      TERMINAL = "cool-retro-term";
+      GBM_BACKEND= "nvidia-drm";
+      __GLX_VENDOR_LIBRARY_NAME= "nvidia";
+      LIBVA_DRIVER_NAME= "nvidia"; # hardware acceleration
+      __GL_VRR_ALLOWED="1";
+      WLR_NO_HARDWARE_CURSORS = "1";
+      WLR_RENDERER_ALLOW_SOFTWARE = "1";
+      CLUTTER_BACKEND = "wayland";
+      WLR_RENDERER = "vulkan";
+
+      XDG_CURRENT_DESKTOP = "Hyprland";
+      XDG_SESSION_DESKTOP = "Hyprland";
+      XDG_SESSION_TYPE = "wayland";
+    };
+
+    };
   
   #test later systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
   wayland.windowManager.hyprland = {
@@ -26,7 +47,7 @@
 
     # Autostart
 
-    #exec-once = hyprctl setcursor Bibata-Modern-Classic 24
+    exec-once = hyprctl setcursor Bibata-Modern-Classic 24
 
     source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
@@ -121,6 +142,7 @@
 
 
     bind = $mainMod, RETURN, exec, ./scripts/cool-retro-term.sh
+    bind = $mainMod, B, exec, opera --no-sandbox
     bind = $mainMod, Q, killactive,
     bind = $mainMod, M, exit,
     bind = $mainMod, F, exec, nautilus
@@ -139,7 +161,7 @@
     bind = $mainMod, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -W
 
     # Functional keybinds
-    bind =,XF86AudioMicMute,exec,pamixer --default-source -t | $HOME/.config/hypr/scripts/micbacklight
+    bind =,XF86AudioMicMute,exec,pamixer --default-source -t
     bind =,XF86MonBrightnessDown,exec,light -U 20
     bind =,XF86MonBrightnessUp,exec,light -A 20
     bind =,XF86AudioMute,exec,pamixer -t

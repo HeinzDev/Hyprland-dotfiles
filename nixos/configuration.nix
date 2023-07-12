@@ -48,7 +48,7 @@
 
    services.xserver = {
    enable = true;
-   #videoDrivers = ["nvidia"];
+   videoDrivers = ["nvidia"];
     #displayManager = {
     #    gdm.enable = true;
     #};
@@ -58,24 +58,24 @@
   };
 
   #NvidiaConfig
-  #hardware.opengl = {
-  #  enable = true;
-  #  driSupport = true;
-  #  driSupport32Bit = true;
-  #};
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
-  #nixpkgs.config.allowUnfreePredicate = pkg:
-  #  builtins.elem (lib.getName pkg) [
-  #    "#nvidia-x11"
-  #  ];
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "#nvidia-x11"
+    ];
 
-  #hardware.nvidia = {
-  #  modesetting.enable = true;
-  #  open = false;
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = false;
 
-  #  nvidiaSettings = true;
-  #  package = config.boot.kernelPackages.nvidiaPackages.stable;
-  #};
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
+  };
 
   programs.steam = {
    enable = true;
@@ -97,13 +97,14 @@
 
   # add /.local to $PATH
   environment.variables={
+   NIXOS_OZONE_WL = "1";
    PATH = [
      "\${HOME}/.local/bin"
      "\${HOME}/.config/rofi/scripts"
    ];
    NIXPKGS_ALLOW_UNFREE = "1";
   };
-
+  
   users.users.enzo = {
     isNormalUser = true;
     description = "Enzo";

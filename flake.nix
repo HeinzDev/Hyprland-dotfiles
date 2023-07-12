@@ -27,7 +27,6 @@ nixosConfigurations = {
       specialArgs = { inherit hyprland; };
       modules = [ 
         ./nixos/configuration.nix
-
         hyprland.nixosModules.default
         home-manager.nixosModules.home-manager
         {

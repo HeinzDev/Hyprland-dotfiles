@@ -57,7 +57,7 @@
 
     # Input config
     input {
-        kb_layout = us
+        kb_layout = us,br
         kb_variant =
         kb_model =
         kb_options =
@@ -154,7 +154,8 @@
 
     bind = $mainMod SHIFT, W, exec, $HOME/.config/hypr/scripts/wallpaper
 
-    # Binds in cyrillic layout
+    # Switch Keyboard Layouts
+    bind = $mainMod, SPACE, exec, hyprctl switchxkblayout kingston-hyperx-alloy-fps-rgb next
 
     bind = , Print, exec, grim -g "$(slurp)" - | wl-copy
     bind = SHIFT, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -S

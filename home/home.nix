@@ -23,6 +23,7 @@
     wl-clipboard
     pamixer
     mpc-cli
+    celluloid
     discord
     exa
     btop

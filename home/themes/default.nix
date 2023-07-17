@@ -13,8 +13,8 @@
     };
 
     theme = {
-      name = "Nightfox-Dusk-B";
-    #  package = pkgs.catppuccin-gtk;
+      name = "Nightfox-Dusk-B-LB";
+      package = pkgs.callPackage ./Nightfox-Dusk/default.nix { };
     };
 
     cursorTheme = {

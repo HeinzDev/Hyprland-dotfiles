@@ -28,6 +28,9 @@
           y = 12;
         };
       };
+      shell = {
+        program = "/usr/bin/env zsh";
+      };
     };
   };
 }

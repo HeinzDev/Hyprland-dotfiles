@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://hyprland.org/">
-    <img src="https://img.shields.io/static/v1?label=Hyprland&message=master&style=flat&logo=hyprland&colorA=24273A&colorB=8AADF4&logoColor=CAD3F5"/>
+    <img src="https://img.shields.io/static/v1?label=Hyprland&message=latest&style=flat&logo=hyprland&colorA=24273A&colorB=8AADF4&logoColor=CAD3F5"/>
   </a>
    <a href="https://github.com/zemmsoares/awesome-rices">
     <img src="https://raw.githubusercontent.com/zemmsoares/awesome-rices/main/assets/awesome-rice-badge.svg" alt="awesome-rice-badge">

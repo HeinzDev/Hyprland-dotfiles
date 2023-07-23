@@ -13,8 +13,9 @@
     };
 
     theme = {
-      name = "Nightfox-Dusk-B-LB";
-      package = pkgs.callPackage ./Nightfox-Dusk/default.nix { };
+      name = "Tokyonight-Dark-B-LB";
+      #package = pkgs.callPackage ./Nightfox-Dusk/default.nix { };
+      package = pkgs.tokyo-night-gtk;
     };
 
     cursorTheme = {

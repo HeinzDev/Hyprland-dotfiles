@@ -13,36 +13,46 @@
     homeDirectory = "/home/enzo";
   };
 
-  home.packages = (with pkgs; [ 
+  home.packages = (with pkgs; [
+    
+    #User Apps
+    celluloid
+    discord
     cool-retro-term
+    bibata-cursors
+    vscode
+    lollypop
+    lutris
+    openrgb
+    betterdiscord-installer
+    
+
+    #utils
+    ranger
+    wlr-randr
+    git
+    gnumake
+    catimg
+    curl
+    appimage-run
+    xflux
+
+    #misc 
+    cava
     neovim
     nano
+    rofi
+    nitch
     wget
     grim
     slurp
     wl-clipboard
     pamixer
     mpc-cli
-    celluloid
-    discord
+    tty-clock
     exa
     btop
-    ranger
-    wlr-randr
-    git
-    gnumake
-    curl
-    appimage-run
-    bibata-cursors
-    catimg
-    vscode
-    lollypop
-    lutris
-    nitch
-    openrgb
-    tty-clock
-    xflux
-    betterdiscord-installer
+
   ]) ++ (with pkgs.gnome; [ 
     nautilus
     zenity

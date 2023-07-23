@@ -10,7 +10,7 @@
   # Bootloader.
   # boot.loader.systemd-boot.enable = true;
   # boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   boot.loader.grub.enable = true;
   boot.loader.grub.devices = [ "nodev" ];
@@ -74,7 +74,7 @@
     open = false;
 
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.latest;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   programs.steam = {

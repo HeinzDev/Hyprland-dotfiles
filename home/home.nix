@@ -36,6 +36,7 @@
     curl
     appimage-run
     xflux
+    dunst
 
     #misc 
     cava

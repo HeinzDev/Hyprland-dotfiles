@@ -52,7 +52,8 @@
 
     source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
-    exec-once = swww init && swww img /home/enzo/Imagens/wallpapers/menhera.jpg
+    exec-once = swww init
+    exec = swww img /home/enzo/Imagens/wallpapers/menhera.jpg
 
     # Set en layout at startup
 
@@ -142,18 +143,16 @@
     bind = $mainMod, G, fullscreen,
 
 
-    bind = $mainMod, RETURN, exec, ./scripts/cool-retro-term.sh
+    bind = $mainMod, RETURN, exec, cool-retro-term-zsh
     bind = $mainMod, B, exec, opera --no-sandbox
     bind = $mainMod, Q, killactive,
     bind = $mainMod, M, exit,
     bind = $mainMod, F, exec, nautilus
     bind = $mainMod, V, togglefloating,
     bind = $mainMod, w, exec, wofi --show drun
-    bind = $mainMod, R, exec, ./.config/rofi/launchers/type-2/launcher.sh
+    bind = $mainMod, R, exec, rofi1
     bind = $mainMod, P, pseudo, # dwindle
     bind = $mainMod, J, togglesplit, # dwindle
-
-    bind = $mainMod SHIFT, W, exec, $HOME/.config/hypr/scripts/wallpaper
 
     # Switch Keyboard Layouts
     bind = $mainMod, SPACE, exec, hyprctl switchxkblayout kingston-hyperx-alloy-fps-rgb next

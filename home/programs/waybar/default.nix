@@ -141,10 +141,10 @@
         "position" = "top";
         modules-left = [
           "custom/launcher"
-          "wlr/workspaces"
+          #"wlr/workspaces"
           "temperature"
           #"idle_inhibitor"
-          "custom/wall"
+          #"custom/wall"
           "mpd"
           "custom/cava-internal"
         ];
@@ -163,17 +163,12 @@
         "custom/launcher" = {
           "format" = " ";
           "on-click" = "pkill rofi || ~/.config/rofi/launchers/type-2/launcher.sh";
-          "tooltip" = false;
-        };
-        "custom/wall" = {
-          "on-click" = "wallpaper_random";
-          "on-click-middle" = "default_wall";
-          "on-click-right" = "killall dynamic_wallpaper || dynamic_wallpaper &";
-          "format" = "󱢡";
+          "on-click-middle" = "exec default_wall";
+          "on-click-right" = "exec wallpaper_random";
           "tooltip" = false;
         };
         "custom/cava-internal" = {
-          "exec" = "sleep 1s && ~/scripts/cava-internal.sh";
+          "exec" = "sleep 1s && cava-internal";
           "tooltip" = false;
         };
         "wlr/workspaces" = {

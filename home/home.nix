@@ -37,6 +37,7 @@
     appimage-run
     xflux
     dunst
+    pavucontrol
 
     #misc 
     cava

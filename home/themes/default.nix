@@ -14,7 +14,6 @@
 
     theme = {
       name = "Tokyonight-Dark-B-LB";
-      #package = pkgs.callPackage ./Nightfox-Dusk/default.nix { };
       package = pkgs.tokyo-night-gtk;
     };
 

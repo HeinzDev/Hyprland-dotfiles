@@ -115,7 +115,7 @@
                }
          #custom-powermenu {
                  color: rgb(242, 143, 173);
-                 padding-right: 8px;
+                 padding-right: 10px;
                }
          #tray {
                  padding-right: 8px;
@@ -141,10 +141,7 @@
         "position" = "top";
         modules-left = [
           "custom/launcher"
-          #"wlr/workspaces"
           "temperature"
-          #"idle_inhibitor"
-          #"custom/wall"
           "mpd"
           "custom/cava-internal"
         ];
@@ -162,27 +159,13 @@
         ];
         "custom/launcher" = {
           "format" = " ";
-          "on-click" = "pkill rofi || ~/.config/rofi/launchers/type-2/launcher.sh";
+          "on-click" = "pkill rofi || rofi2;
           "on-click-middle" = "exec default_wall";
           "on-click-right" = "exec wallpaper_random";
           "tooltip" = false;
         };
         "custom/cava-internal" = {
           "exec" = "sleep 1s && cava-internal";
-          "tooltip" = false;
-        };
-        "wlr/workspaces" = {
-          "format" = "{icon}";
-          "on-click" = "activate";
-          # "on-scroll-up" = "hyprctl dispatch workspace e+1";
-          # "on-scroll-down" = "hyprctl dispatch workspace e-1";
-        };
-        "idle_inhibitor" = {
-          "format" = "{icon}";
-          "format-icons" = {
-            "activated" = "";
-            "deactivated" = "";
-          };
           "tooltip" = false;
         };
         "pulseaudio" = {
@@ -233,12 +216,6 @@
           "format-wifi" = "󰖩 {essid}";
           "interval" = 1;
           "tooltip" = false;
-        };
-        "temperature" = {
-          # "hwmon-path"= "${env:HWMON_PATH}";
-          #"critical-threshold"= 80;
-          "tooltip" = false;
-          "format" = " {temperatureC}°C";
         };
         "custom/powermenu" = {
           "format" = "";

@@ -49,9 +49,6 @@
    services.xserver = {
    enable = true;
    videoDrivers = ["nvidia"];
-    #displayManager = {
-    #    gdm.enable = true;
-    #};
     # X11 keymap
     layout = "br";
     xkbVariant = "";
@@ -74,7 +71,7 @@
     open = false;
 
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 
   programs.steam = {
@@ -116,14 +113,6 @@
       lolcat
    ];
   };
-
-  # Enable automatic login for the user.
-  #services.xserver.displayManager.autoLogin.enable = true;
-  #services.xserver.displayManager.autoLogin.user = "enzo";
-
-  # Workaround for GNOME autologin:
-  #systemd.services."getty@tty1".enable = false;
-  #systemd.services."autovt@tty1".enable = false;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

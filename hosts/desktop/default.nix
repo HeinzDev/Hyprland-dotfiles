@@ -3,11 +3,7 @@
   imports = [
     ./fonts
     ./virtualisation
-    #./scripts
   ];
-
-  #services.xserver.displayManager.sessionPackages = [ pkgs.hyprland ];
-  #users.users.greeter.packages = [ pkgs.hyprland ];
 
   programs.regreet.enable = true;
   services.greetd = {

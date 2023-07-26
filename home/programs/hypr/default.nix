@@ -157,8 +157,7 @@
     bind = $mainMod, SPACE, exec, hyprctl switchxkblayout kingston-hyperx-alloy-fps-rgb next
 
     bind = , Print, exec, grim -g "$(slurp)" - | wl-copy
-    bind = SHIFT, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -S
-    bind = $mainMod, Print, exec, $HOME/.config/hypr/scripts/hyprland-screenshot-tool -W
+    bind = SHIFT, Print, exec, grim -g "$(slurp)"
 
     # Functional keybinds
     bind =,XF86AudioMicMute,exec,pamixer --default-source -t

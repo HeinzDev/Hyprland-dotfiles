@@ -115,7 +115,7 @@
                }
          #custom-powermenu {
                  color: rgb(242, 143, 173);
-                 padding-right: 10px;
+                 padding-right: 8px;
                }
          #tray {
                  padding-right: 8px;
@@ -159,7 +159,7 @@
         ];
         "custom/launcher" = {
           "format" = " ";
-          "on-click" = "pkill rofi || rofi2;
+          "on-click" = "pkill rofi || rofi2";
           "on-click-middle" = "exec default_wall";
           "on-click-right" = "exec wallpaper_random";
           "tooltip" = false;

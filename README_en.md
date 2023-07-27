@@ -21,7 +21,7 @@
 
 ### Apps:
 
-|                          |             NixOS 23.05               |
+|                          |             NixOS 23.11               |
 |--------------------------|:-------------------------------------:|
 | **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
 | **Terminal Emulator**    |   [Cool-Retro-Term](https://github.com/Swordfish90/cool-retro-term) |
@@ -70,7 +70,7 @@ Desktop Environment:
 
 0. Download the project:
 ```bash
- $ git clone https://github.com/HeinzDev/Nix-Dotfiles.git | cd Hyprland-dotfiles.git
+ $ git clone https://github.com/HeinzDev/Nix-Dotfiles.git | cd Hyprland-dotfiles
 ```
 
 1. Install the project:

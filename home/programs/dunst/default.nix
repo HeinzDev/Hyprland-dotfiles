@@ -6,8 +6,8 @@
     rounded = yes
     monitor = 0
     follow = mouse
-    width = 320
-    height = 320
+    width = 400
+    height = 400
     origin = top-right
     offset = 15x15
     scale = 0
@@ -68,6 +68,22 @@
     timeout = 0
     default_icon = /usr/share/icons/Paper/16x16/status/dialog-warning.png
 
+[action_open_url]
+  summary = "Abrir URL"
+  body = "Clique para abrir o URL."
+  icon = /path/to/icon.png
+  script = /path/to/open_url.sh %u
+
     '';
+
+    home.file.".config/dunst/open_url.sh".text = ''
+#/usr/bin/env bash
+#get the notification URL
+url="$1"
+
+# Open it in default browser
+xdg-open "$url"
+    '';
+
 }
 

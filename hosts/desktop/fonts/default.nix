@@ -11,6 +11,8 @@
       noto-fonts-emoji
       nerdfonts
       twemoji-color-font
+      fira-code
+      fira-code-symbols
     ];
     fontconfig = {
       localConf = ''

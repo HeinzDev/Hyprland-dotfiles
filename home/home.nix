@@ -18,6 +18,7 @@
     #User Apps
     celluloid
     discord
+    librewolf
     cool-retro-term
     bibata-cursors
     vscode

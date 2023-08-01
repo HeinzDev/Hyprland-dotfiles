@@ -11,7 +11,6 @@
     origin = top-right
     offset = 15x15
     scale = 0
-    notification_limit = 0
     progress_bar = false
     indicate_hidden = yes
     transparency = 0
@@ -47,9 +46,12 @@
     corner_radius = 10
     ignore_dbusclose = false
     force_xinerama = false
-    mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
+    mouse_left_click = open_url, close_current
+    mouse_middle_click = close_current
     mouse_right_click = close_all
+    notification_limit = 5
+
+    browser = /usr/bin/env librewolf -new-tab
 
 [urgency_low]
     background = "#232323"
@@ -68,21 +70,6 @@
     timeout = 0
     default_icon = /usr/share/icons/Paper/16x16/status/dialog-warning.png
 
-[action_open_url]
-  summary = "Abrir URL"
-  body = "Clique para abrir o URL."
-  icon = /path/to/icon.png
-  script = /path/to/open_url.sh %u
-
-    '';
-
-    home.file.".config/dunst/open_url.sh".text = ''
-#/usr/bin/env bash
-#get the notification URL
-url="$1"
-
-# Open it in default browser
-xdg-open "$url"
     '';
 
 }

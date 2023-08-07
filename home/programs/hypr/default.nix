@@ -134,7 +134,7 @@
     bind = $mainMod, J, togglesplit, # dwindle
 
     # Switch Keyboard Layouts
-    bind = $mainMod, SPACE, exec, hyprctl switchxkblayout kingston-hyperx-alloy-fps-rgb next
+    bind = $mainMod, SPACE, exec, hyprctl switchxkblayout teclado-gamer-husky-blizzard next
 
     bind = , Print, exec, grim -g "$(slurp)" - | wl-copy
     bind = SHIFT, Print, exec, grim -g "$(slurp)"

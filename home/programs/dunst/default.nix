@@ -46,7 +46,7 @@
     corner_radius = 10
     ignore_dbusclose = false
     force_xinerama = false
-    mouse_left_click = open_url, close_current
+    mouse_left_click = do_action, close_current
     mouse_middle_click = close_current
     mouse_right_click = close_all
     notification_limit = 5

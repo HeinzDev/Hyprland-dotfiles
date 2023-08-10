@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/static/v1?label=Hyprland&message=Stable&style=flat&logo=hyprland&colorA=24273A&colorB=8AADF4&logoColor=CAD3F5"/>
-   <a href="https://github.com/zemmsoares/awesome-rices">
+   <a href="https://github.com/zemmsoares/awesome-rices#heinzdev">
     <img src="https://raw.githubusercontent.com/zemmsoares/awesome-rices/main/assets/awesome-rice-badge.svg" alt="awesome-rice-badge">
   </a>
     <img src="https://img.shields.io/static/v1?label=Nix Flake&message=Check&style=flat&logo=nixos&colorA=24273A&colorB=9173ff&logoColor=CAD3F5">

@@ -38,7 +38,7 @@
 
     # Input config
     input {
-        kb_layout = us,br
+        kb_layout = br,us
         kb_variant =
         kb_model =
         kb_options =
@@ -122,14 +122,16 @@
     bind = $mainMod, G, fullscreen,
 
 
-    bind = $mainMod, RETURN, exec, cool-retro-term-zsh
+    #bind = $mainMod, RETURN, exec, cool-retro-term-zsh
+    bind = $mainMod, RETURN, exec, kitty
     bind = $mainMod, B, exec, opera --no-sandbox
+    bind = $mainMod, L, exec, librewolf
     bind = $mainMod, Q, killactive,
     bind = $mainMod, M, exit,
     bind = $mainMod, F, exec, nautilus
     bind = $mainMod, V, togglefloating,
     bind = $mainMod, w, exec, wofi --show drun
-    bind = $mainMod, R, exec, rofi1
+    bind = $mainMod, R, exec, rofiWindow
     bind = $mainMod, P, pseudo, # dwindle
     bind = $mainMod, J, togglesplit, # dwindle
 

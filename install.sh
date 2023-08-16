@@ -16,5 +16,10 @@ if [ ! -f ~/Imagens/wallpapers/menhera.jpg ]; then
 
     cp "$DIR"/home/wallpapers/menhera.jpg ~/Imagens/wallpapers/
 fi
+if [ ! -f ~/.config/rofi/rofi.png ]; then
+    mkdir -p ~/Imagens/wallpapers/
+
+    cp "$DIR"/home/wallpapers/rofi.png ~/.config/rofi/
+fi
 
 sudo nixos-rebuild switch --flake .#enzo --show-trace

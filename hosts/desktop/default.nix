@@ -3,6 +3,7 @@
   imports = [
     ./fonts
     ./virtualisation
+    ./services
   ];
 
   programs.regreet.enable = true;

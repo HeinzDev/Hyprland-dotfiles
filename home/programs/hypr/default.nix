@@ -32,7 +32,7 @@
     source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
     exec-once = swww init
-    exec = swww img /home/enzo/Imagens/wallpapers/menhera.jpg
+    exec-once = swww img /home/enzo/Imagens/wallpapers/konichiwa.png
 
     # Set en layout at startup
 

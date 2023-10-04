@@ -6,6 +6,7 @@
     ./programs
     ./scripts
     ./themes
+    ./packages
   ];
 
   home = {

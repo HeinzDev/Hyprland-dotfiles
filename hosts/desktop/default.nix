@@ -4,7 +4,6 @@
     ./fonts
     ./virtualisation
     ./services
-    ./packages
   ];
 
   programs.regreet.enable = true;

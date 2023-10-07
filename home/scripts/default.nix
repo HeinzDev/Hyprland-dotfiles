@@ -7,9 +7,6 @@ let
   cool-retro-term-zsh = pkgs.writeShellScriptBin "cool-retro-term-zsh" ''
     cool-retro-term -e zsh
   '';
-  hhkb = pkgs.writeShellScriptBin "hhkb" ''
-    sudo hhkb
-  '';
     rofi1 = pkgs.writeShellScriptBin "rofi1" ''
     ~/.config/rofi/launchers/type-1/launcher.sh
   '';
@@ -38,7 +35,6 @@ in
 {
   home.packages = with pkgs; [
     cool-retro-term-zsh
-    hhkb
     rofi1
     rofi2
     rofiWindow

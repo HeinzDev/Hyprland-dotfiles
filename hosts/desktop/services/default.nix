@@ -3,9 +3,8 @@
 
 let
   # (Workaround)
-  #sudo /home/enzo/Apps/Files/evremap/target/release/evremap remap /home/enzo/Apps/Files/evremap/hhkb.toml
   hhkbCommand = ''
-    sudo hhkb
+sudo /home/enzo/Apps/Files/evremap/target/release/evremap remap /home/enzo/Apps/Files/evremap/hhkb.toml
   '';
 
 in

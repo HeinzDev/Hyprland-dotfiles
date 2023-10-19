@@ -31,8 +31,8 @@
 
     source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
-    exec-once = swww init
-    exec-once = swww img /home/enzo/Imagens/wallpapers/konichiwa.png
+    exec-once = swww init & sleep 0.5 && exec wallpaper_random
+    # exec-once = swww img /home/enzo/Imagens/wallpapers/konichiwa.png
 
     # Set en layout at startup
 
@@ -112,7 +112,7 @@
     windowrule=float,^(pavucontrol)$
     windowrule=center,^(kitty)$
     windowrule=float,^(blueman-manager)$
-    windowrule=size 1040 670,^(kitty)$
+    windowrule=size 600 500,^(kitty)$
     windowrule=size 934 525,^(mpv)$
     windowrule=float,^(mpv)$
     windowrule=center,^(mpv)$

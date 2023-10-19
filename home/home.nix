@@ -32,6 +32,7 @@
     ranger
     wlr-randr
     git
+    rustup
     gnumake
     catimg
     curl
